@@ -1,6 +1,7 @@
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from decryptor.decrypt import decrypt_file
+from decryptor.converter import convert_file
 
 app = FastAPI()
 PORT = 8000

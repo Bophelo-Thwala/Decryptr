@@ -1,0 +1,7 @@
+create virtual environment
+
+    python -m venv venv
+
+activate venv
+
+    backend\venv\Scripts\activate.bat
