@@ -1,0 +1,6 @@
+Run svelte
+
+npm run dev -- --open
+
+Start Coding
+src/routes/home/+page.svelte
