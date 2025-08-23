@@ -1,0 +1,17 @@
+footer {
+    display: flex;
+    position: sticky;
+    top: 200px;
+    left: 0px;
+    right: 0px;
+    z-index: 1000;
+    background-color: #d4d8d4; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    height: 80px;
+    align-items: center;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: box-shadow 0.3s ease;
+}

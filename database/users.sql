@@ -4,9 +4,11 @@ CREATE TABLE users (
     email VARCHAR(100) UNIQUE NOT NULL,
     user_password VARCHAR(255) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    user_credits INT DEFAULT 0,
+    user_credits INT DEFAULT 0
 );
 
 INSERT INTO users (username, email, user_password, user_credits) VALUES (
     'john_doe', 'johndoe@gmail.com', 'hashed_password_123', 10
 );
+
+SELECT * FROM users WHERE username = 'john_doe';
