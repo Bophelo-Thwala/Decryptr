@@ -1,0 +1,21 @@
+Logo: {
+    Unlock.png: {
+        obtained: flaticon
+        
+        link: https://www.flaticon.com/free-icon/unlock_7349581?
+
+        author: orvipixel
+
+        author link: https://www.flaticon.com/authors/orvipixel
+    }
+
+    Folder.png: {
+        obtained: flaticon
+
+        link: https://www.flaticon.com/free-icon/folder_1379905?
+
+        author: Freepik
+
+        author link: https://www.flaticon.com/authors/freepik
+    }
+}

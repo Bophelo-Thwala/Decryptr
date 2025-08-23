@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 
+
 .IncreaseButton {
     background-color: #3b82f6; /* Tailwind bg-blue-500 */
     color: #fff;               /* Tailwind text-white */
@@ -14,3 +15,36 @@
 .IncreaseButton:hover {
     cursor: pointer;
 }
+
+.LogoPhoto {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 0px;
+    left: 720px;
+}
+
+.Title {
+    text-align: center;
+    font-size: 20px;
+}
+
+.About{
+    position: relative;
+    top: 50px;
+    left: 0px;
+    height: 200px;
+}
+
+#AboutTitle {
+    text-align: center;
+    font-size: 25px;
+}
+
+#AboutText {
+    font-size: 16px;
+    position: relative;
+    top: 50px;
+    left: 0px;
+}
+
