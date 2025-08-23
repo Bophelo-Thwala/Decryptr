@@ -55,4 +55,5 @@
 
     console.log("Width: " + width);
     console.log("Height: " + height);
+    console.log("Git");
 </script>
