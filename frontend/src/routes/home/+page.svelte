@@ -1,10 +1,5 @@
 <Navbar />
 
-<div>
-   <ul>
-        <a href="/home"><li><p>Profile</p></li></a>
-   </ul>
-</div>
 
 <img src={LogoPhoto} alt="Logo" class="LogoPhoto"/>
 
@@ -17,14 +12,6 @@
         as well as Convert different files</p>
 </section>
 
-<!--
-    <h1>Hello, World</h1><br>
-    <h1 style="font-bold">COUNT : {$count}</h1><br><br>
-    <button on:click={Increment} class="IncreaseButton">Increment</button>
-    <button on:click={Decrement}>Decrement</button>
-    <button on:click={Reset}>Reset</button>
--->
-
 
 <Footer />
 <script lang="ts">
@@ -33,27 +20,24 @@
     import Navbar from "$lib/components/navbar.svelte";
     import Footer from "$lib/components/footer.svelte";
     import LogoPhoto from "$lib/assets/decryptr-logo.png";
+	import { onMount } from "svelte";
+    import { PUBLIC_PORT } from "$env/static/public";
 
-    //const count = writable(0);
-    let width = window.innerWidth;
-    let height = window.innerHeight;
+    const PORT = writable("");
 
-    /*
-    $: $count; // ensure $count is reactive
+    
+    let width = writable(0);
+    let height = writable(0);
 
-    function Increment() {
-        $count++
-    }
 
-    function Decrement() {
-        $count <= 0 ? $count = 0 : $count--;
-    }
+    onMount(() => {
+        width.set(window.innerWidth);
+        height.set(window.innerHeight);
+        PORT.set(PUBLIC_PORT);
 
-    function Reset() {
-        $count = 0;
-    }*/
+        console.log("Width: " + $width + "px");
+        console.log("Height: " + $height + "px");
+        console.log("SvelteKit on port " + $PORT);
+    });
 
-    console.log("Width: " + width);
-    console.log("Height: " + height);
-    console.log("Git");
 </script>

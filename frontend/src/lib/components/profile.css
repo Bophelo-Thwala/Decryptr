@@ -3,3 +3,14 @@
     height: 50px;
     border-radius: 100px;
 }
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.dropdown-menu li {
+    border-bottom: 1px solid #f3f4f6;
+    margin-top: 8px;
+}

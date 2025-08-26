@@ -16,6 +16,21 @@
     cursor: pointer;
 }
 
+.dropdown-menu {
+    position: absolute;
+    right: 0px;
+    top: 85px;
+    left: 1340px;
+    margin-top: 0px;
+    width: 180px;
+    background-color: #fff;
+    border-radius: 0px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+    overflow: hidden;
+}
+
 .LogoPhoto {
     width: 100px;
     height: 100px;

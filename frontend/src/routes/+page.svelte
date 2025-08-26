@@ -3,9 +3,9 @@
 <script>
     import { goto } from "$app/navigation";
     import { onMount } from "svelte";
-    import { env } from "$env/dynamic/public";
+    import { PUBLIC_PORT } from "$env/static/public";
 
-    const PORT = env.PUBLIC_PORT || 5173;
+    const PORT = PUBLIC_PORT;
 
     console.log("\nRunning SvelteKit on port", PORT);
 
