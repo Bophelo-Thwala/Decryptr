@@ -21,10 +21,7 @@
     import Footer from "$lib/components/footer.svelte";
     import LogoPhoto from "$lib/assets/decryptr-logo.png";
 	import { onMount } from "svelte";
-    import { PUBLIC_PORT } from "$env/static/public";
-
-    const PORT = writable("");
-
+    
     
     let width = writable(0);
     let height = writable(0);
@@ -33,11 +30,8 @@
     onMount(() => {
         width.set(window.innerWidth);
         height.set(window.innerHeight);
-        PORT.set(PUBLIC_PORT);
-
         console.log("Width: " + $width + "px");
-        console.log("Height: " + $height + "px");
-        console.log("SvelteKit on port " + $PORT);
+        console.log("Height: " + $height + "px");      
     });
 
 </script>
